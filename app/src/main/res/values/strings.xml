@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Los Gatos Meat</string>
+
+    <!--Menu Items-->
+    <string name="about_us">About Us</string>
+    <string name="specialities">Specialities</string>
+    <string name="fish">Fish</string>
+    <string name="poultry">Poultry</string>
+    <string name="sandwiches">Sandwiches</string>
+    <string name="order">Order Now</string>
+</resources>

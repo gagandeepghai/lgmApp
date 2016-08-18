@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "483964084647",
+    "firebase_url": "https://losgatosmeat.firebaseio.com",
+    "project_id": "losgatosmeat",
+    "storage_bucket": "losgatosmeat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:483964084647:android:00d03252f7f84cbd",
+        "android_client_info": {
+          "package_name": "com.losgatosmeat.restaurant.lgm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "483964084647-fm2p42boor64ohohl02k3q89ak1gg0od.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCx-eszLRzSIS22bR9V5qklqbp5BTrHp88"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
