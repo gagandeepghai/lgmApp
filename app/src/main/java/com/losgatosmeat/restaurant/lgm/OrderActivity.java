@@ -4,8 +4,10 @@ import android.content.Intent;
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Point;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.view.Display;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.webkit.WebView;
@@ -25,8 +27,16 @@ public class OrderActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.order_activity);
 
-        WebView wv = UIUtils.findView(this, R.id.webview);
-        wv.loadUrl("http://www.leapset.com/order/restaurant/lpLosGatosMeatsLg");
+        Display display = getWindowManager().getDefaultDisplay();
+        Point size = new Point();
+        display.getSize(size);
+        int width = size.x;
+
+        WebView browser = UIUtils.findView(this, R.id.webview);
+        browser.getSettings().setLoadWithOverviewMode(true);
+        browser.getSettings().setUseWideViewPort(true);
+        //wv.setInitialScale(100);
+        browser.loadUrl("http://www.leapset.com/order/restaurant/lpLosGatosMeatsLg");
     }
 
     @Override
@@ -40,6 +50,7 @@ public class OrderActivity extends ActionBarActivity {
         int id = item.getItemId();
         switch (id) {
             case R.id.about_us:
+                goBackToHome();
                 break;
             case R.id.specialities_menu:
                 changeToMenuDisplay(DisplayActivity.MenuCategory.Specialities.toString());
@@ -57,6 +68,11 @@ public class OrderActivity extends ActionBarActivity {
                 break;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    private void goBackToHome() {
+        Intent intent = new Intent(OrderActivity.this, MainActivity.class);
+        startActivityForResult(intent, EDITOR_REQUEST_CODE);
     }
 
     private void changeToMenuDisplay(String category) {

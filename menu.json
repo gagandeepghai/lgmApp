@@ -108,6 +108,401 @@
       "name" : "Teriyaki Chili Garlic",
       "price" : "$4.49 per lb"
     } ]
+  },
+  "Poultry" : {
+    "Chicken" : [ {
+      "name" : "Smoked",
+      "price" : "$7.99 ea"
+    }, {
+      "name" : "Smoked Breast",
+      "price" : "$4.99 ea"
+    } ],
+    "Chuckards" : [ {
+      "name" : "Smoked",
+      "price" : "$3.99 ea"
+    } ],
+    "Duck" : [ {
+      "name" : "Smoked",
+      "price" : "$7.99"
+    },{
+      "name" : "Smoked Domestic",
+      "price" : "$7.99"
+    }, {
+      "name" : "Smoked Teriyaki",
+      "price" : "$9.99"
+    }, {
+      "name" : "Smoked Teriyaki Domestic",
+      "price" : "$12.95"
+    }, {
+      "name" : "Tumbled & Marinated Garlic",
+      "price" : "$6.99 ea"
+    }, {
+      "name" : "Tumbled & Marinated Teriyaki",
+      "price" : "$6.99 ea"
+    }, {
+      "name" : "Tumbled & Marinated Santa Fe",
+      "price" : "$6.99 ea"
+    }, {
+      "name" : "Tumbled & Marinated Off Season",
+      "price" : "$6.99 ea"
+    }, {
+      "name" : "Tumbled & Marinated Mesquite",
+      "price" : "$6.99 ea"
+    }, {
+      "name" : "Jerky Teriyaki",
+      "price" : "$13.99 lb"
+    },{
+      "name" : "Jerky Regular Peppered",
+      "price" : "$13.99 lb"
+    }, {
+      "name" : "Jerky Stick Teriyaki",
+      "price" : "$9.99 lb"
+    },{
+      "name" : "Jerky Stick Regular Peppered",
+      "price" : "$9.99 lb"
+    } , {
+      "name" : "Sausage Mild or Hot",
+      "price" : "$3.99"
+    }, {
+      "name" : "Sausage Basil",
+      "price" : "$3.99"
+    }, {
+      "name" : "Sausage Onion",
+      "price" : "$3.99"
+    }, {
+      "name" : "Sausage Pinenuts",
+      "price" : "$3.99"
+    }, {
+      "name" : "Boning Charges",
+      "price" : "$3.99 "
+    } ],
+    "Goose" : [ {
+      "name" : "Smoked",
+      "price" : "$12.99 ea"
+    }, {
+      "name" : "Smoked Teriyaki",
+      "price" : "$13.99 ea"
+    }, {
+      "name" : "Tumbled & Marinated Garlic",
+      "price" : "$10.99 ea"
+    }, {
+      "name" : "Tumbled & Marinated Teriyaki",
+      "price" : "$10.99 ea"
+    }, {
+      "name" : "Tumbled & Marinated Santa Fe",
+      "price" : "$10.99 ea"
+    }, {
+      "name" : "Tumbled & Marinated Off Season",
+      "price" : "$10.99 ea"
+    }, {
+      "name" : "Tumbled & Marinated Mesquite",
+      "price" : "$10.99 ea"
+    }, {
+      "name" : "Jerky Teriyaki",
+      "price" : "$13.99 lb"
+    },{
+      "name" : "Jerky Regular Peppered",
+      "price" : "$13.99 lb"
+    }, {
+      "name" : "Jerky Stick Teriyaki",
+      "price" : "$9.99 lb"
+    },{
+      "name" : "Jerky Stick Regular Peppered",
+      "price" : "$9.99 lb"
+    } , {
+      "name" : "Sausage Mild or Hot",
+      "price" : "$2.99"
+    }, {
+      "name" : "Sausage Basil",
+      "price" : "$2.99"
+    }, {
+      "name" : "Sausage Onion",
+      "price" : "$2.99"
+    }, {
+      "name" : "Sausage Pinenuts",
+      "price" : "$2.99"
+    }, {
+      "name" : "Boning Charges",
+      "price" : "$7.99 "
+    } ], 
+    "Pheasant" : [ {
+      "name" : "Smoked",
+      "price" : "$7.95 ea"
+    }, {
+      "name" : "Smoked Teriyaki",
+      "price" : "$9.95 ea"
+    } ], 
+    "Quail" : [ {
+      "name" : "Smoked",
+      "price" : "$3.95 ea"
+    } ], 
+    "Rabbit" : [ {
+      "name" : "Smoked",
+      "price" : "$8.99 ea"
+    } ],
+    "Turkey" : [ {
+      "name" : "Smoked 0-20 lb",
+      "price" : "$20.00"
+    }, {
+      "name" : "Smoked 25+ lb",
+      "price" : "$30.00"
+    }, {
+      "name" : "Tumbled & Marinated 0-15 lb",
+      "price" : "$15.99"
+    }, {
+      "name" : "Tumbled & Marinated 15-25 lb",
+      "price" : "$19.99 ea"
+    }, {
+      "name" : "Tumbled & Marinated 25+ lb",
+      "price" : "$24.99 ea"
+    }, {
+      "name" : "Pepper added",
+      "price" : "$1.50 ea"
+    }],
+    "Vacuum Packing" : [
+    {
+      "name" : "Jerky Sausage",
+      "price" : "$0.85 bag"
+    }, {
+      "name" : "Whole Turkey",
+      "price" : "$10 bag"
+    } ]
+  },
+  "Sandwiches" : {
+    "Smokehouse Traditional" : [ {
+      "name" : "Roast Turkey",
+      "price" : "$7.99"
+    }, {
+      "name" : "Salami",
+      "price" : "$7.99"
+    }, {
+      "name" : "Smoked Turkey",
+      "price" : "$7.99"
+    }, {
+      "name" : "Smoked Ham",
+      "price" : "$7.99"
+    }, {
+      "name" : "Corned Beef",
+      "price" : "$8.49"
+    }, {
+      "name" : "Pastrami",
+      "price" : "$8.49"
+    }, {
+      "name" : "Sausage Sandwich",
+      "price" : "$8.49"
+    }, {
+      "name" : "Veggie",
+      "price" : "$7.99"
+    } ],
+    "Smokehouse Signature" : [ {
+      "name" : "JJ SPECIAL",
+      "price" : "$8.99"
+    }, {
+      "name" : "ROLLIE",
+      "price" : "$8.99"
+    }, {
+      "name" : "SLOW-BURN",
+      "price" : "$8.99"
+    }, {
+      "name" : "POOR BOY",
+      "price" : "$8.99"
+    } ],
+    "Smokehouse Super Signature" : [ {
+      "name" : "JACKIE SPECIAL",
+      "price" : "$9.49"
+    }, {
+      "name" : "CHICKEN CLUB",
+      "price" : "$9.49"
+    },{
+      "name" : "SUPER HERO",
+      "price" : "$9.49"
+    }, {
+      "name" : "THE A.J.",
+      "price" : "$9.49"
+    },{
+      "name" : "THE TRIPLE BY PASS",
+      "price" : "$9.49"
+    }, {
+      "name" : "THE CRAZY TURKEY",
+      "price" : "$9.49"
+    },{
+      "name" : "THE QUAD ",
+      "price" : "$10.49"
+    } ],
+    "Breads" : [ {
+      "name" : "Ciabatta",
+      "price" : ""
+    },{
+      "name" : "Dutch Crunch",
+      "price" : ""
+    },{
+      "name" : "Rye Swirl",
+      "price" : ""
+    },{
+      "name" : "Sourdough (Roll)",
+      "price" : ""
+    },{
+      "name" : "Sourdough (Slice)",
+      "price" : ""
+    },{
+      "name" : "Sweet w/sesame seed",
+      "price" : ""
+    },{
+      "name" : "Whole Wheat (Roll)",
+      "price" : ""
+    },{
+      "name" : "Whole Wheat (Slice)",
+      "price" : ""
+    } ],
+    "Cheeses" : [ {
+      "name" : "Monterey Jack",
+      "price" : ""
+    },{
+      "name" : "American",
+      "price" : ""
+    },{
+      "name" : "Cheddar",
+      "price" : ""
+    },{
+      "name" : "Swiss",
+      "price" : ""
+    },{
+      "name" : "Provolone",
+      "price" : ""
+    },{
+      "name" : "Smoked Cheddar",
+      "price" : ""
+    },{
+      "name" : "Pepper Jack",
+      "price" : ""
+    } ]
+  },
+  "Specialities" : {
+    "Prime Rib Roast" : [ {
+      "name" : "Seasoned and Tied",
+      "price" : ""
+    }],
+    "Beef Jerky" : [ {
+      "name" : "Pepper",
+      "price" : ""
+    },{
+      "name" : "Teriyaki",
+      "price" : ""
+    },{
+      "name" : "BBQ",
+      "price" : ""
+    },{
+      "name" : "Turkey",
+      "price" : ""
+    },{
+      "name" : "Buffalo",
+      "price" : ""
+    } ],
+    "Sausages" : [ {
+      "name" : "Low salt",
+      "price" : ""
+    },{
+      "name" : "Low fat sausages",
+      "price" : ""
+    },{
+      "name" : "Smoked or Fresh",
+      "price" : ""
+    },{
+      "name" : "Polish",
+      "price" : ""
+    },{
+      "name" : "Linguisa",
+      "price" : ""
+    }, {
+      "name" : "Chorizo",
+      "price" : ""
+    },{
+      "name" : "Famous mild/Hot Italian",
+      "price" : ""
+    },{
+      "name" : "Sun Dried Tomato-Basil",
+      "price" : ""
+    },{
+      "name" : "Kielbasa",
+      "price" : ""
+    } ],
+    "Smoked Products" : [ {
+      "name" : "Maple Sugar Honey Cured Hams",
+      "price" : ""
+    },{
+      "name" : "Turkeys",
+      "price" : ""
+    },{
+      "name" : "Pheasants",
+      "price" : ""
+    } ],
+    "Bacon" : [ {
+      "name" : "Regular",
+      "price" : ""
+    },{
+      "name" : "Pepper",
+      "price" : ""
+    },{
+      "name" : "Country Style",
+      "price" : ""
+    },{
+      "name" : "Canadian",
+      "price" : ""
+    } ],
+    "Pork" : [ {
+      "name" : "Baby Back Ribs",
+      "price" : ""
+    },{
+      "name" : "Spareribs",
+      "price" : ""
+    },{
+      "name" : "Pork Chops",
+      "price" : ""
+    },{
+      "name" : "Tenderloins",
+      "price" : ""
+    },{
+      "name" : "Pork Loin Roasts",
+      "price" : ""
+    } ],
+    "Lunch Meats & Cold Cuts" : [ {
+      "name" : "Liverwurst",
+      "price" : ""
+    },{
+      "name" : "Bologna",
+      "price" : ""
+    },{
+      "name" : "Salami",
+      "price" : ""
+    }, {
+      "name" : "Pastrami",
+      "price" : ""
+    } ],
+    "Others" : [ 
+    {
+      "name" : "Marinated Steaks",
+      "price" : ""
+    },{
+      "name" : "Tri-tips",
+      "price" : ""
+    },{
+      "name" : "Pork Loin",
+      "price" : ""
+    },{
+      "name" : "Turduckens ",
+      "price" : ""
+    },{
+      "name" : "Corned Beef",
+      "price" : ""
+    }, {
+      "name" : "Party Trays",
+      "price" : ""
+    },{
+      "name" : "Wild Game Processing Available",
+      "price" : ""
+    },{
+      "name" : "Smoked Fish",
+      "price" : ""
+    } ]
   }
 }
-

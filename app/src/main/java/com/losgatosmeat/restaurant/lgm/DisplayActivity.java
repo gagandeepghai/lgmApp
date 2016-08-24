@@ -50,7 +50,6 @@ public class DisplayActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_display);
 
-
         renderMenuItem(getIntent().getStringExtra(MENU_ITEM_KEY));
     }
 
