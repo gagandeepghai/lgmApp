@@ -3,33 +3,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MainActivity">
     <item
-        android:id="@+id/about_us"
+        android:id="@+id/home"
         android:orderInCategory="100"
-        android:title="@string/about_us"
+        android:title="@string/home"
         app:showAsAction="never" />
     <item
-        android:id="@+id/specialities_menu"
+        android:id="@+id/menu"
         android:orderInCategory="100"
-        android:title="@string/specialities"
+        android:title="@string/menu"
         app:showAsAction="never" />
     <item
-        android:id="@+id/fish_menu"
+        android:id="@+id/order"
         android:orderInCategory="100"
-        android:title="@string/fish"
+        android:title="@string/order_online"
         app:showAsAction="never" />
     <item
-        android:id="@+id/poultry_menu"
+        android:id="@+id/contact"
         android:orderInCategory="100"
-        android:title="@string/poultry"
-        app:showAsAction="never" />
-    <item
-        android:id="@+id/sandwiches_menu"
-        android:orderInCategory="100"
-        android:title="@string/sandwiches"
-        app:showAsAction="never" />
-    <item
-        android:id="@+id/order_menu"
-        android:orderInCategory="100"
-        android:title="@string/order"
+        android:title="@string/contact_us"
         app:showAsAction="never" />
 </menu>

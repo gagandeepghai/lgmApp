@@ -33,14 +33,13 @@ public class OrderActivity extends ActionBarActivity {
         int width = size.x;
 
         WebView browser = UIUtils.findView(this, R.id.webview);
-        browser.getSettings().setLoadWithOverviewMode(true);
-        browser.getSettings().setUseWideViewPort(true);
-        //wv.setInitialScale(100);
+        browser.setInitialScale(100);
         browser.loadUrl("http://www.leapset.com/order/restaurant/lpLosGatosMeatsLg");
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
@@ -49,22 +48,17 @@ public class OrderActivity extends ActionBarActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         switch (id) {
-            case R.id.about_us:
+            case R.id.home:
                 goBackToHome();
                 break;
-            case R.id.specialities_menu:
-                changeToMenuDisplay(DisplayActivity.MenuCategory.Specialities.toString());
+            case R.id.menu:
+                openMenu();
                 break;
-            case R.id.fish_menu:
-                changeToMenuDisplay(DisplayActivity.MenuCategory.Fish.toString());
+            case R.id.order:
+                renderOrdering();
                 break;
-            case R.id.poultry_menu:
-                changeToMenuDisplay(DisplayActivity.MenuCategory.Poultry.toString());
-                break;
-            case R.id.sandwiches_menu:
-                changeToMenuDisplay(DisplayActivity.MenuCategory.Sandwiches.toString());
-                break;
-            case R.id.order_menu:
+            case R.id.contact:
+                contactInfo();
                 break;
         }
         return super.onOptionsItemSelected(item);
@@ -75,10 +69,18 @@ public class OrderActivity extends ActionBarActivity {
         startActivityForResult(intent, EDITOR_REQUEST_CODE);
     }
 
-    private void changeToMenuDisplay(String category) {
-        Intent intent = new Intent(OrderActivity.this, DisplayActivity.class);
-        intent.putExtra(DisplayActivity.MENU_ITEM_KEY, category);
+    private void contactInfo() {
+        Intent intent = new Intent(OrderActivity.this, ContactActivity.class);
         startActivityForResult(intent, EDITOR_REQUEST_CODE);
     }
 
+    private void openMenu() {
+        Intent intent = new Intent(OrderActivity.this, MenuActivity.class);
+        startActivityForResult(intent, EDITOR_REQUEST_CODE);
+    }
+
+    private void renderOrdering() {
+        Intent intent = new Intent(OrderActivity.this, OrderActivity.class);
+        startActivityForResult(intent, EDITOR_REQUEST_CODE);
+    }
 }

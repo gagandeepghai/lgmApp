@@ -17,6 +17,12 @@
         </activity>
         <activity android:name=".DisplayActivity" />
         <activity android:name=".OrderActivity" />
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".ContactActivity" />
     </application>
+
+    <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="AIzaSyCHh_2EQD3eZjxkBj8iknBGyseRC6Ka8ig"/>
 
 </manifest>

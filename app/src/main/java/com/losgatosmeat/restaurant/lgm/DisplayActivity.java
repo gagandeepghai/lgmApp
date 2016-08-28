@@ -41,6 +41,12 @@ public class DisplayActivity extends ActionBarActivity {
         Sandwiches
     }
 
+    static MenuCategory[] arrWIndex = {MenuCategory.Fish, MenuCategory.Sandwiches, MenuCategory.Specialities, MenuCategory.Poultry};
+
+    public static String getCategoryString(int index) {
+        return arrWIndex[index].toString();
+    }
+
     public static final String MENU_ITEM_KEY = "MenuItem";
 
     private DatabaseReference mFirebaseDatabaseReference;
@@ -51,45 +57,6 @@ public class DisplayActivity extends ActionBarActivity {
         setContentView(R.layout.menu_display);
 
         renderMenuItem(getIntent().getStringExtra(MENU_ITEM_KEY));
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-        switch (id) {
-            case R.id.about_us:
-                goBackToHome();
-                break;
-            case R.id.specialities_menu:
-                renderMenuItem(MenuCategory.Specialities.toString());
-                break;
-            case R.id.fish_menu:
-                renderMenuItem(MenuCategory.Fish.toString());
-                break;
-            case R.id.poultry_menu:
-                renderMenuItem(MenuCategory.Poultry.toString());
-                break;
-            case R.id.sandwiches_menu:
-                renderMenuItem(MenuCategory.Sandwiches.toString());
-                break;
-            case R.id.order_menu:
-                renderOrdering();
-                break;
-            default:
-                goBackToHome();
-                break;
-        }
-        return super.onOptionsItemSelected(item);
-    }
-
-    private void renderOrdering() {
-        Intent intent = new Intent(DisplayActivity.this, OrderActivity.class);
-        startActivityForResult(intent, EDITOR_REQUEST_CODE);
-    }
-
-    private void goBackToHome() {
-        Intent intent = new Intent(DisplayActivity.this, MainActivity.class);
-        startActivityForResult(intent, EDITOR_REQUEST_CODE);
     }
 
     private void renderMenuItem(String value) {
@@ -158,19 +125,52 @@ public class DisplayActivity extends ActionBarActivity {
         ExpandableMenuListAdapter adapter = new ExpandableMenuListAdapter(this,
                 groups);
         listView.setAdapter(adapter);
-//        listView.setBackgroundColor(Color.RED);
-    }
-
-    private String formatLeftRightAdjust(String left, String right) {
-        String formattedLeft = String.format("%-20s", left);
-        String formattedRight = String.format("%20s", right);
-
-        return formattedLeft + formattedRight + "\n";
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        switch (id) {
+            case R.id.home:
+                goBackToHome();
+                break;
+            case R.id.menu:
+                openMenu();
+                break;
+            case R.id.order:
+                renderOrdering();
+                break;
+            case R.id.contact:
+                contactInfo();
+                break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    private void goBackToHome() {
+        Intent intent = new Intent(DisplayActivity.this, MainActivity.class);
+        startActivityForResult(intent, EDITOR_REQUEST_CODE);
+    }
+
+    private void contactInfo() {
+        Intent intent = new Intent(DisplayActivity.this, ContactActivity.class);
+        startActivityForResult(intent, EDITOR_REQUEST_CODE);
+    }
+
+    private void openMenu() {
+        Intent intent = new Intent(DisplayActivity.this, MenuActivity.class);
+        startActivityForResult(intent, EDITOR_REQUEST_CODE);
+    }
+
+    private void renderOrdering() {
+        Intent intent = new Intent(DisplayActivity.this, OrderActivity.class);
+        startActivityForResult(intent, EDITOR_REQUEST_CODE);
     }
 }
